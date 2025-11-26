@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\CPP\\TicTacToe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18BA51BE-75ED-4F87-AF1E-539A41CBFC16}|TicTacToe.vcxproj|C:\\Dev\\CPP\\TicTacToe\\TicTacToe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{18BA51BE-75ED-4F87-AF1E-539A41CBFC16}|TicTacToe.vcxproj|solutionrelative:TicTacToe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicTacToe.cpp",
+              "DocumentMoniker": "C:\\Dev\\CPP\\TicTacToe\\TicTacToe.cpp",
+              "RelativeDocumentMoniker": "TicTacToe.cpp",
+              "ToolTip": "C:\\Dev\\CPP\\TicTacToe\\TicTacToe.cpp",
+              "RelativeToolTip": "TicTacToe.cpp",
+              "ViewState": "AgIAADgAAAAAAAAAAAAQwFQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-26T19:12:36.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
