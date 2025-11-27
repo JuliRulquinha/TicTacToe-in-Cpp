@@ -4,22 +4,31 @@
 #include <vector>
 using namespace std;
 
-
-
 string drawTicTacToeTable(char tttArr[]) {
     std::stringstream ss;
 
 
-    ss << "    1   2   3\n";
+    // ss << "    1   2   3\n";
+    // ss << "      |   |     \n";
+    // ss << "A   " << tttArr[0] << " | " << tttArr[1] << " | " << tttArr[2] << "\n";
+    // ss << "   ___|___|___\n";
+    // ss << "      |   |     \n";
+    // ss << "B   " << tttArr[3] << " | " << tttArr[4] << " | " << tttArr[5] << "\n";
+
+    // ss << "   ___|___|___\n";
+    // ss << "      |   |     \n";
+    // ss << "C   " << tttArr[6] << " | " << tttArr[7] << " | " << tttArr[8] << "\n";
+    // ss << "      |   |   \n";
+
     ss << "      |   |     \n";
-    ss << "A   " << tttArr[0] << " | " << tttArr[1] << " | " << tttArr[2] << "\n";
+    ss << "    " << tttArr[0] << " | " << tttArr[1] << " | " << tttArr[2] << "\n";
     ss << "   ___|___|___\n";
     ss << "      |   |     \n";
-    ss << "B   " << tttArr[3] << " | " << tttArr[4] << " | " << tttArr[5] << "\n";
+    ss << "    " << tttArr[3] << " | " << tttArr[4] << " | " << tttArr[5] << "\n";
 
     ss << "   ___|___|___\n";
     ss << "      |   |     \n";
-    ss << "C   " << tttArr[6] << " | " << tttArr[7] << " | " << tttArr[8] << "\n";
+    ss << "    " << tttArr[6] << " | " << tttArr[7] << " | " << tttArr[8] << "\n";
     ss << "      |   |   \n";
 
     return ss.str();
@@ -51,20 +60,23 @@ bool isWinningSymbol(char symbol, char tttArr[]) {
 
     
 void playTicTacToe() {
+    
     auto gameOn = true;
     auto isXTurn = true;
     char tttArr[] = {'1','2','3','4','5','6','7','8','9'};
     auto round = 1;
     bool hasWinner = false;
 
-    cout << "-- TIC-TAC-TOE GAME --\n" << endl;
-
-    cout << drawTicTacToeTable(tttArr) << endl;
+    
 
     int slot;
     char playerXOrO;
     while (gameOn) {
+        
 
+        cout << "\n\033[35m-- TIC-TAC-TOE GAME --\033[0m\n" << endl;
+
+        cout << drawTicTacToeTable(tttArr) << endl;
         switch (isXTurn) {
         case true:
             playerXOrO = 'X';
@@ -74,16 +86,19 @@ void playTicTacToe() {
             break;
         }
 
-        cout << "-- Player " << playerXOrO << "'s turn" << endl;
-        cout << "-- choose your slot\n" << endl;
+        cout << "\033[32m-- Player " << playerXOrO << "'s turn\033[0m\n" << endl;
+        cout << "\033[33m-- choose your slot\033[0m\n\n" << endl;
 
         
 
         cin >> slot;
         cout << "\n";
 
+        
+
         if(tttArr[slot-1] == 'X' || tttArr[slot-1] == 'O'){
-            cout<<"Pick an empty slot\n"<<endl;
+            
+            cout<<"\033[31m*** Pick an empty slot ***\033[0m\n"<<endl;
             continue;
         }
 
@@ -135,6 +150,8 @@ void playTicTacToe() {
 
         cout << drawTicTacToeTable(tttArr) << endl;
         round++;
+
+        
     }
 }
 
@@ -142,7 +159,4 @@ int main(){
 
     playTicTacToe();
 
-    /*char tttArr[] = { 'O','5','6','7','O','X','7','8','O' };
-
-    cout<< isWinningSymbol('O', tttArr)<<endl;*/
 }
