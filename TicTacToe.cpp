@@ -77,8 +77,15 @@ void playTicTacToe() {
         cout << "-- Player " << playerXOrO << "'s turn" << endl;
         cout << "-- choose your slot\n" << endl;
 
+        
+
         cin >> slot;
         cout << "\n";
+
+        if(tttArr[slot-1] == 'X' || tttArr[slot-1] == 'O'){
+            cout<<"Pick an empty slot\n"<<endl;
+            continue;
+        }
 
         switch (slot) {
         case 1:
